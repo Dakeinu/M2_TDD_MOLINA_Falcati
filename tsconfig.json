@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "es6",                // Compiler le code en ES6
+      "module": "commonjs",           // Utiliser commonjs pour la compatibilité avec Node.js
+      "outDir": "./dist",             // Dossier de sortie pour les fichiers compilés
+      "rootDir": "./src",             // Dossier racine contenant les fichiers source
+      "strict": true,                 // Activer le mode strict pour le typage
+      "esModuleInterop": true,        // Permet l'interopérabilité avec les modules ES6 par défaut
+      "skipLibCheck": true,           // Ignorer la vérification des types des fichiers de déclaration
+      "forceConsistentCasingInFileNames": true,  // Forcer la cohérence de la casse dans les noms de fichiers
+      "moduleResolution": "node",     // Utiliser la résolution de module de Node.js
+      "resolveJsonModule": true,      // Permettre l'importation de modules JSON
+      "noImplicitReturns": true,      // Pas de retour implicite dans les fonctions
+      "noUnusedLocals": true,         // Avertir sur les variables locales inutilisées
+      "noUnusedParameters": true      // Avertir sur les paramètres inutilisés
+    },
+    "include": [
+      "src/**/*"                      // Inclure tous les fichiers dans src pour la compilation
+    ],
+    "exclude": [
+      "node_modules",                 // Exclure le dossier node_modules
+      "**/*.test.ts"                  // Exclure les fichiers de test de la compilation
+    ]
+  }
+  
