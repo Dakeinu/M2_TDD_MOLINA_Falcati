@@ -7,3 +7,7 @@ test('returns number as string', () => {
 test('returns Fizz for multiples of 3', () => {
   expect(fizzBuzz(3)).toBe('Fizz');
 });
+
+test('returns Buzz for multiples of 5', () => {
+  expect(fizzBuzz(5)).toBe('Buzz');
+});
